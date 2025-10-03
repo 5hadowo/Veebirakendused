@@ -1,5 +1,6 @@
 * {
-    font-family: sans-serif;
+    font-family: monospace;
+    font-size: 17px;
     box-sizing: border-box;
 }
 
@@ -8,11 +9,12 @@ body {
     margin: 0;
 }
 
+/* navigation bar */
+
 .logo img {
     margin: 5px;
-    width: 45px;
-    height: 45px;
-    
+    width: 3em;
+    height: 3em;
 }
 
 .nav {
@@ -28,6 +30,7 @@ body {
     color: black;
     font-size: 1em;
     text-decoration: none;
+    display: block;
 }
 
 .nav a:hover {
@@ -49,9 +52,10 @@ body {
     position: sticky;
 }
 
+/* content in three columns (main content in the middle and two sidebars) */
 .bars {
     display: flex;
-    justify-content: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -66,30 +70,45 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    margin: 20px;
 }
+
+/* different width */
+
+@media (max-width: 500px) {
+    .sidebar {
+        display: none;
+    }
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        margin: 10px;
+    }
+}
+
+/* posts */
 
 .post {
     background-color: #d3d3d3;
-    
     border-radius: 10px;
     padding: 8px;
 
 }
 
-.post > div {
+.post > div { /* post header */
     display: flex;
     justify-content: space-between;
 }
 
 .user {
-    width: 35px;
-    height: 35px;
-}
-
-p + img {
-    width: 35px;
-    height: 35px;
+    width: 2em;
+    height: 2em;
 }
 
 main > article > div > p {
@@ -99,9 +118,17 @@ main > article > div > p {
 .image {
     width: 100%;
     height: auto;
+    margin: 0;
 }
 .message {
     padding-left: 3px;
+    margin: 0;
+}
+
+p + img {
+    width: 2em;
+    height: 2em;
+    margin-left: 3px;
 }
 
 .footer {
