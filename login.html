@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/style.css">
     <title>HW1</title>
-
 </head>
 <body>
     <header id="header">
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="addPost.html">addPost</a></li>
         </ul>
         <a class="logo" href="login.html"><img src="res/images/icon.jpg"></a>
     </header>
-
 
     <main>
         <div class="login-box">
@@ -26,18 +22,13 @@
             <a href="CreateAnAccount">Create an account</a>
             <p>or</p>
             <p>Please log in</p>
-            <form action="/action_page.php">
-                <input type="text" id="email" placeholder="Email">
-                <input type="text" id="email" placeholder="Password">
-                <input type="submit" value="Log in">
+            <form action="index.html">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input id="LogIn" type="submit" value="Log in">
             </form>
             <a href="ForgetPassword">Forget password</a>
         </div>
     </main>
-
-    <input type="text" id="email" placeholder="Email">
-    <input type="text" id="email" placeholder="Password">
-    
-    
 </body>
 </html>
