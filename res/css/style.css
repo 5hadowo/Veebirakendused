@@ -110,6 +110,7 @@ main {
 .user {
     width: 2em;
     height: 2em;
+    border-radius: 5px;
 }
 
 main > article > div > p {
