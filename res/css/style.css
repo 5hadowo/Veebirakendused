@@ -13,8 +13,9 @@ body {
 
 .logo img {
     margin: 5px;
-    width: 3em;
-    height: 3em;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
 }
 
 .nav {
@@ -81,7 +82,8 @@ main {
     }
     #header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        position: relative;
     }
     .nav {
         flex-direction: column;
@@ -109,6 +111,7 @@ main {
 .user {
     width: 2em;
     height: 2em;
+    border-radius: 5px;
 }
 
 main > article > div > p {
