@@ -150,7 +150,8 @@ p + img {
     border-radius: 7px;
     padding: 20px;
     padding-bottom: 40px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 20px auto 0 auto; /*Üleval, vasak, alumine, paremal*/
     box-shadow: 2px 3px rgba(115, 127, 135, 0.75);
 }
