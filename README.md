@@ -1,2 +1,6 @@
 # Veebirakendused
-Veebirakenduste Loomine Project Group 6
+Veebirakenduste Loomine Project Team AC Group 6
+Members:
+Oliver Wood
+Henri Lipping
+Janeli Sillaots
